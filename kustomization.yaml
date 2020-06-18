@@ -1,0 +1,4 @@
+resources:
+  - nodejs/k8s/pod.yaml
+patchesStrategicMerge:
+  - patch.yaml
