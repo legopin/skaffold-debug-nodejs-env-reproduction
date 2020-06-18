@@ -1,0 +1,17 @@
+## Issue
+
+during `skaffold debug` for nodejs, kustomize patches for env varialbe are duplicated on the resulting object
+
+## Reproduction steps
+
+```
+skaffold version
+v1.11.0
+
+kustomize version
+{Version:3.6.1 GitCommit:c97fa946d576eb6ed559f17f2ac43b3b5a8d5dbd BuildDate:2020-05-27T23:38:55+01:00 GoOs:darwin GoArch:amd64}
+```
+
+
+1. `skaffold debug`
+2. `kubectl get pod nodejs -o yaml`
