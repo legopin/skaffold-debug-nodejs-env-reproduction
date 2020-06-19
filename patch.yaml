@@ -8,3 +8,8 @@ spec:
     env:
       - name: test
         value: hello
+      - name: from-secret
+        valueFrom:
+            secretKeyRef:
+              key: hello
+              name: big-secret

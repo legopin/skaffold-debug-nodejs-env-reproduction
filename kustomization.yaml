@@ -2,3 +2,7 @@ resources:
   - nodejs/k8s/pod.yaml
 patchesStrategicMerge:
   - patch.yaml
+secretGenerator:
+  - name: big-secret
+    literals:
+      - hello=world
